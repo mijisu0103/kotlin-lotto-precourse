@@ -7,7 +7,7 @@ import camp.nextstep.edu.missionutils.Randoms
 // Lotto machine responsible for issuing tickets
 object LottoMachine {
 
-    // Issue a list of Lotto tickts based on the given purchase amount
+    // Issue a list of Lotto tickets based on the given purchase amount
     fun issueTickets(amount: Int): List<Lotto> {
 
         // Validates that the amount is divisible by 1000
