@@ -10,7 +10,7 @@
 ## Features
 
 - [x] Input purchase amount
-- [ ] Generate correct number of tickets (₩1,000 per ticket)
+- [x] Generate correct number of tickets (₩1,000 per ticket)
 - [ ] Validate each ticket has 6 unique numbers in range 1–45
 - [ ] Input 6 winning numbers + 1 bonus number
 - [ ] Compare user tickets to winning numbers
