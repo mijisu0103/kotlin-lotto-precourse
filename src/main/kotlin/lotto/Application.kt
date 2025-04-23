@@ -17,4 +17,10 @@ fun main() {
 
     // Print the number of issued Lotto tickets
     OutputView.printTickets(tickets)
+
+    // Read the winning numbers input from the user
+    val winningNumbers = InputView.readWinningNumbers()
+
+    // Read the bonus number input from the user
+    val bonusNumber = InputView.readBonusNumber()
 }
