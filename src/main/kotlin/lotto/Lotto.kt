@@ -6,4 +6,8 @@ class Lotto(private val numbers: List<Int>) {
     }
 
     // TODO: Implement additional functions
+
+    // Return the Lotto numbers sorted in ascending order
+    fun getSortedNumbers(): List<Int> = numbers.sorted()
+
 }

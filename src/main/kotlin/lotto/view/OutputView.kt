@@ -11,5 +11,12 @@ object OutputView {
         // Print the number of tickets purchased
         println("\nYou have purchased ${tickets.size} tickets.")
 
+        // Iterate through each ticket and print its sorted numbers for validation
+        tickets.forEach {
+
+            // Print the sorted numbers of the current ticket
+            println(it.getSortedNumbers())
+        }
+
     }
 }
