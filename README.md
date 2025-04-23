@@ -12,7 +12,7 @@
 - [x] Input purchase amount
 - [x] Generate correct number of tickets (₩1,000 per ticket)
 - [x] Validate each ticket has 6 unique numbers in range 1–45
-- [ ] Input 6 winning numbers + 1 bonus number
+- [x] Input 6 winning numbers + 1 bonus number
 - [ ] Compare user tickets to winning numbers
 - [ ] Calculate prize counts and profit rate
 - [ ] Handle errors with proper message format `[ERROR]`
