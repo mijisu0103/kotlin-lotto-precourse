@@ -23,4 +23,19 @@ fun main() {
 
     // Read the bonus number input from the user
     val bonusNumber = InputView.readBonusNumber()
+
+    // Print the header for the winning statistics
+    println("\nWinning Statistics\n---")
+
+    // Iterate through each ticket to check matching results
+    tickets.forEach { ticket ->
+
+        // Count how many numbers match the winning numbers
+        val match = ticket.matchCount(winningNumbers)
+
+        // Print the number of matches for the current ticket
+        println("$match Matches")
+    }
+
+
 }

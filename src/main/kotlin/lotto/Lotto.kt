@@ -10,4 +10,10 @@ class Lotto(private val numbers: List<Int>) {
     // Return the Lotto numbers sorted in ascending order
     fun getSortedNumbers(): List<Int> = numbers.sorted()
 
+    // Count how many numbers match the winning numbers
+    fun matchCount(winningNumbers: List<Int>): Int =
+
+        // Count the number of matching numbers between the Lotto and the winning numbers
+        numbers.count { it in winningNumbers }
+
 }
