@@ -14,7 +14,7 @@
 - [x] Validate each ticket has 6 unique numbers in range 1–45
 - [x] Input 6 winning numbers + 1 bonus number
 - [x] Compare user tickets to winning numbers
-- [ ] Calculate prize counts and profit rate
+- [x] Calculate prize counts and profit rate
 - [ ] Handle errors with proper message format `[ERROR]`
 - [ ] Use only IllegalArgumentException or IllegalStateException for validation
 - [ ] Ensure output format matches exactly
