@@ -1,10 +1,12 @@
 package lotto
 
 import lotto.view.InputView
-
 import lotto.view.OutputView
 
 import lotto.domain.LottoMachine
+import lotto.domain.LottoResult
+import lotto.domain.Rank
+
 
 fun main() {
     // TODO: Implement the program
@@ -24,8 +26,8 @@ fun main() {
     // Read the bonus number input from the user
     val bonusNumber = InputView.readBonusNumber()
 
-    // Print the header for the winning statistics
-    println("\nWinning Statistics\n---")
+    // Create an instance to store the Lotto result
+    val result = LottoResult()
 
     // Iterate through each ticket to check matching results
     tickets.forEach { ticket ->
@@ -33,9 +35,18 @@ fun main() {
         // Count how many numbers match the winning numbers
         val match = ticket.matchCount(winningNumbers)
 
-        // Print the number of matches for the current ticket
-        println("$match Matches")
+        // Check if the ticket contains the bonus number
+        val hasBonus = ticket.containsBonus(bonusNumber)
+
+        // Determine the rank based on matches and bonus
+        val rank = Rank.from(match, hasBonus)
+
+        // Record the result for the determined rank
+        result.record(rank)
     }
+
+    // Print the final Lotto result statistics
+    result.print(purchaseAmount)
 
 
 }

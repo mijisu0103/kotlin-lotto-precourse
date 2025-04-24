@@ -16,4 +16,6 @@ class Lotto(private val numbers: List<Int>) {
         // Count the number of matching numbers between the Lotto and the winning numbers
         numbers.count { it in winningNumbers }
 
+    // Check if the Lotto numbers contain the bonus number
+    fun containsBonus(bonus: Int): Boolean = bonus in numbers
 }
