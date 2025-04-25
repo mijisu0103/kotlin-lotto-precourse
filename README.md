@@ -16,7 +16,7 @@
 - [x] Compare user tickets to winning numbers
 - [x] Calculate prize counts and profit rate
 - [x] Handle errors with proper message format `[ERROR]`
-- [ ] Use only IllegalArgumentException or IllegalStateException for validation
+- [x] Use only IllegalArgumentException or IllegalStateException for validation
 - [ ] Ensure output format matches exactly
 - [ ] All test cases should be passed using `./gradlew clean test`
 
