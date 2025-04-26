@@ -26,7 +26,7 @@ class LottoResult {
         Rank.values().filter { it != Rank.MISS }.sortedBy { it.match }.forEach {
 
             // Print match result, prize amount with commas, number of winning tickets
-            println("${it.match} Matches${if (it == Rank.SECOND) " + Bonus Ball" else ""} (${it.prize.formatWithComma()} KRW) - ${results[it] ?: 0} ticket")
+            println("${it.match} Matches${if (it == Rank.SECOND) " + Bonus Ball" else ""} (${it.prize.formatWithComma()} KRW) – ${results[it] ?: 0} tickets")
         }
 
         // Calculate the total winnings
