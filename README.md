@@ -18,7 +18,7 @@
 - [x] Handle errors with proper message format `[ERROR]`
 - [x] Use only IllegalArgumentException or IllegalStateException for validation
 - [x] Ensure output format matches exactly
-- [ ] All test cases should be passed using `./gradlew clean test`
+- [x] All test cases should be passed using `./gradlew clean test`
 
 <br>
 
@@ -120,7 +120,23 @@ Total return rate is 62.5%.
 ## Project Structure
 
 ```
-
+└── src
+    ├── main
+    │   └── kotlin
+    │       └── lotto
+    │           ├── Application.kt
+    │           ├── Lotto.kt
+    │           ├── LottoMachine.kt
+    │           ├── LottoResult.kt
+    │           ├── Rank.kt
+    │           └── view
+    │               ├── InputView.kt
+    │               └── OutputView.kt
+    └── test
+        └── kotlin
+            └── lotto
+                ├── ApplicationTest.kt
+                └── LottoTest.kt
 ```
 
 <br>
