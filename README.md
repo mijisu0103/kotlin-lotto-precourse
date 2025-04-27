@@ -2,6 +2,7 @@
 
 # kotlin-lotto-precourse
 
+This is a simple command-line Lotto simulation developed in Kotlin for the Hero Tech Course: Berlin Edition pre-course mission 2. Users purchase lottery tickets, input winning numbers and a bonus number, and the programme calculates match results and the total return rate.
 
 <br>
 
